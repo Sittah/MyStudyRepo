@@ -143,7 +143,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="TestFolder\Test.c" />
+    <ClCompile Include="TestFolder\01.LinkedList\E01.ArrayLinkedList\arrayList.c" />
+    <ClCompile Include="TestFolder\01.LinkedList\E01.ArrayLinkedList\arrayList_exe.c" />
+    <ClCompile Include="TestFolder\commonFunc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TestFolder\01.LinkedList\E01.ArrayLinkedList\arrayList.h" />
+    <ClInclude Include="TestFolder\commonFunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
