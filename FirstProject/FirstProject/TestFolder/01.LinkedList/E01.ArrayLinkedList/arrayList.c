@@ -79,6 +79,34 @@ int addElement(PARRAYLIST pArrayL, int position, ARRAYLISTNODE element)
 	}
 }
 
+int removeElement(PARRAYLIST pArrayL, int position)
+{
+	int i = 0;
+	int ret = FALSE;
+	if (NULL == pArrayL)
+	{
+		return FALSE;
+	}
+	// currentCount가 position 보다 작지는 않은지 확인
+	
+	if (position >= 0 && position < pArrayL->currentArray_Count)
+	{
+		printf("pElement[4] : %d , pElement[5] : %d \n", pArrayL->pElement[4].data, pArrayL->pElement[5].data);
+
+		for (i = position; i < pArrayL->currentArray_Count; i++)
+		{
+			pArrayL->pElement[i] = pArrayL->pElement[i + 1];
+		}
+		pArrayL->currentArray_Count--;
+		ret = TRUE;
+	}
+	else
+	{
+		puts("Error, range of position index is exceeded !! - removeElement() ");
+	}
+	return ret;
+
+}
 void displayArrayList(PARRAYLIST pArrayL)
 {
 	if (NULL == pArrayL)
@@ -89,6 +117,8 @@ void displayArrayList(PARRAYLIST pArrayL)
 
 	int i = 0;
 	ARRAYLISTNODE Node;
+
+	printf("현재 노드의 개수 : %d \n", pArrayL->currentArray_Count);
 	for (i = 0; i < pArrayL->currentArray_Count; i++)
 	{
 		printf("%d 번째 노드 : %d \n", i, pArrayL->pElement[i].data);

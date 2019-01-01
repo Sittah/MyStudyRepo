@@ -18,6 +18,7 @@ PARRAYLIST createList(int maxElement_Count);
 void deleteList(PARRAYLIST pArrayL);
 int addElement(PARRAYLIST pArrayL, int position, ARRAYLISTNODE pElement);
 void displayArrayList(PARRAYLIST pArrayL);
+int removeElement(PARRAYLIST pArrayL, int position);
 
 int isArrayListFull(PARRAYLIST pArrayL);
 
