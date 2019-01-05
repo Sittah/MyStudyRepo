@@ -143,9 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="TestFolder\01.LinkedList\E03.CircularLinkedList\circularList.c" />
+    <ClCompile Include="TestFolder\01.LinkedList\E03.CircularLinkedList\circularList_exe.c" />
     <ClCompile Include="TestFolder\commonFunc.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="TestFolder\01.LinkedList\E03.CircularLinkedList\circularList.h" />
     <ClInclude Include="TestFolder\commonFunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

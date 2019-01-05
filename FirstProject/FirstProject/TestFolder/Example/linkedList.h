@@ -15,11 +15,19 @@ typedef struct LinkedListType
 	LINKEDLISTNODE headerNode;
 	
 } LINKEDLIST, *PLINKEDLIST;
+
+PLINKEDLIST createLinkedList();
+int addNode(PLINKEDLIST PLinked, int position, LINKEDLISTNODE newNodeElement);
+int removeNode(PLINKEDLIST pLinked, int position);
+
+void displayList(PLINKEDLIST PLinked);
+void deleteLinkedList(PLINKEDLIST PLinked);
+
 #endif
 
 #ifndef _COMMON_DEF_
 #define _COMMON_DEF_
 enum { FALSE = 0, TRUE = 1};
 #include "../../commonFunc.h"
-#define SafeFree(p) saferFree((void **)(&p)
+#define SafeFree(p) saferFree((void **)(&p))
 #endif
